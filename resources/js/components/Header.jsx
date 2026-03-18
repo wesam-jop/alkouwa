@@ -2,7 +2,7 @@
 
 export default function Header() {
     // const { getCartCount } = useCart();
-    const title = "شركة القوة للإنشاءات";
+    const title = " القوة للإنشاءات";
     return (
         <header className="bg-[#f15a22] shadow-sm sticky top-0 z-50">
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">

@@ -34,7 +34,7 @@ class CategoryController extends Controller
         DB::beginTransaction();
 
         // Check if the user is an admin
-        if (auth()->user()->email !== 'Admin@product.com') {
+        if (auth()->user()->email !== 'Admin@alkouwa.com') {
             return response()->json([
                 'success' => false,
                 'message' => 'Unauthorized'
@@ -100,7 +100,7 @@ class CategoryController extends Controller
         DB::beginTransaction();
 
         // Check if the user is an admin
-        if (auth()->user()->email !== 'Admin@product.com') {
+        if (auth()->user()->email !== 'Admin@alkouwa.com') {
             return response()->json([
                 'success' => false,
                 'message' => 'Unauthorized'
@@ -146,7 +146,7 @@ class CategoryController extends Controller
     public function destroy(Category $category)
     {
         // Check if the user is an admin
-        if (auth()->user()->email !== 'Admin@product.com') {
+        if (auth()->user()->email !== 'Admin@alkouwa.com') {
             return response()->json([
                 'success' => false,
                 'message' => 'Unauthorized'

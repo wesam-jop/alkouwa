@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export default function ProductGrid() {
-    const BASE_URL = "https://alkouwa.store";
+    const BASE_URL = "https://alkouwa.store"; // ← عدل هذا فقط
 
     const [products, setProducts] = useState([]);
     const [filteredProducts, setFilteredProducts] = useState([]);

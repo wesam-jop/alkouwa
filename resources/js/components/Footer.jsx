@@ -1,81 +1,112 @@
+import Logo from "../assets/images/logo.jpg";
 export default function Footer() {
-    const phoneNumber = "963980352758";
-    const email = "alkouwarealestate@gmail.com";
-    const title = "شركة القوة للإنشاءات";
+    const phoneNumber = "963958555250";
+    const email = "gucluinsaat1990@gmail.com";
+    const title = "القوة للإنشاءات";
+
     return (
-        <footer className="bg-white text-[#f15a22] py-8 mt-12 shadow-2xl shadow-[#f15a22] bg-gradient-to-r from-[#f15a22] via-gray-200 to-gray-100">
+        <footer className="bg-gradient-to-r from-[#f15a22] via-[#fff] to-[#fff] text-[#090f10] py-10 mt-12 shadow-2xl shadow-[#f15a22]">
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+                    {/* الشركة */}
                     <div>
-                        <h3 className="text-xl font-bold mb-4">{title}</h3>
-                        <p className="text-[#090f10]" style={{ lineHeight: 3 }}>
-                            منذ انطلاقتها عام 2020، تميزت شركة القوة للإنشاءات
-                            بريادتها في عالم الإكساء والديكور، حيث تجمع بين
-                            الخبرة الهندسية والاحتراف الإداري لتقديم خامات عصرية
-                            وتنفيذ راقٍ بأعلى معايير الجودة.
+                        <h3 className="text-2xl font-bold mb-4 text-[#f15a22]">
+                            {title}
+                        </h3>
+                        <img src={Logo} alt="Company Logo" className="w-32 mb-4" />
+                        <p className="leading-7">
+                            القوّة للإنشاءات منذ انطلاقتها عام 2020، تميزت بريادتها في عالم الإكساء والديكور，
+                            حيث جمعت بين الخبرة الهندسية لتنفيذ راقٍ بأعلى معايير الجودة، والإحتراف الإداري
+                            لتقديم خامات عصرية تناسب جميع المشاريع العقارية.
                         </p>
                     </div>
+
+                    {/* التواصل */}
                     <div>
-                        <h3 className="text-lg font-bold mb-4">تواصل معنا</h3>
-                        <p className="text-[#090f10] mb-2 gap-2 flex items-start">
-                            <i className="fas fa-map-marker-alt mr-2"></i>
-                            سوريا . محافظة ادلب . سرمدا.
-                        </p>
-                        <div className="text-[#090f10] mb-2 gap-2 flex items-center">
-                            <i className="fas fa-phone mr-2"></i>
-                            <div>
-                                <a
-                                    href={`tel:${phoneNumber}`}
-                                    className="underline"
-                                >
-                                    <span>{phoneNumber}</span>
-                                    <span>+</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="text-[#090f10] mb-2 gap-2 flex items-center">
-                            <i className="fa-brands fa-whatsapp mr-2 text-lg"></i>
-                            <div>
-                                <a
-                                    href="https://api.whatsapp.com/send/?phone=352681580199&text&type=phone_number&app_absent=0"
-                                    className="underline"
-                                >
-                                    <span>352681580199</span>
-                                    <span>+</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="text-[#090f10] mb-2 gap-2 flex items-center">
-                            <i class="fa-brands fa-facebook mr-2 text-lg"></i>
-                            <div>
-                                <span className="underline">
-                                    <a href="https://www.facebook.com/profile.php?id=61573287860506&mibextid=wwXIfr&rdid=KIeU2H7mexUzyyvU&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Bmv6DPocH%2F%3Fmibextid%3DwwXIfr#">
-                                        القوة للانشاءات
-                                    </a>
+                        <h3 className="text-xl font-bold mb-4 text-[#f15a22]">
+                            تواصل معنا
+                        </h3>
+
+                        <div className="space-y-3">
+
+                            {/* العنوان */}
+                            <div className="flex items-start gap-3">
+                                <i className="fas fa-map-marker-alt mt-1"></i>
+                                <span>
+                                    سوريا - إدلب - أوتستراد سرمدا الدانا - غرب دوار المولات 500 متر
                                 </span>
                             </div>
-                        </div>
-                        <div className="text-[#090f10] mb-2 gap-2 flex items-center">
-                            <i class="fa-brands fa-instagram mr-2 text-lg"></i>
-                            <div>
-                                <span className="underline">
-                                    <a href="https://www.instagram.com/guclu.insaat.sarmada.20?igsh=aWt6eWt2amFtbHdv&utm_source=qr">
-                                        القوة للانشاءات
-                                    </a>
-                                </span>
+
+                            {/* واتساب */}
+                            <div className="flex items-center gap-3">
+                                <i className="fab fa-whatsapp"></i>
+                                <a
+                                    href={`https://wa.me/${phoneNumber}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-[#f15a22] transition"
+                                >
+                                    +{phoneNumber}
+                                </a>
                             </div>
+
+                            {/* الهاتف */}
+                            <div className="flex items-center gap-3">
+                                <i className="fas fa-phone"></i>
+                                <a
+                                    href={`tel:+${phoneNumber}`}
+                                    className="hover:text-[#f15a22] transition"
+                                >
+                                    +{phoneNumber}
+                                </a>
+                            </div>
+
+                            {/* فيسبوك */}
+                            <div className="flex items-center gap-3">
+                                <i className="fab fa-facebook"></i>
+                                <a
+                                    href="https://www.facebook.com/profile.php?id=61580792525330"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-[#f15a22] transition"
+                                >
+                                    معرض هوم ديكور
+                                </a>
+                            </div>
+
+                            {/* انستغرام */}
+                            <div className="flex items-center gap-3">
+                                <i className="fab fa-instagram"></i>
+                                <a
+                                    href="https://www.instagram.com/home.decor.sarmada/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-[#f15a22] transition"
+                                >
+                                    home.decor.sarmada
+                                </a>
+                            </div>
+
+                            {/* الإيميل */}
+                            <div className="flex items-center gap-3">
+                                <i className="fas fa-envelope"></i>
+                                <a
+                                    href={`mailto:${email}`}
+                                    className="hover:text-[#f15a22] transition"
+                                >
+                                    {email}
+                                </a>
+                            </div>
+
                         </div>
-                        <p className="text-[#090f10] mb-2 gap-2 flex items-center">
-                            <i className="fas fa-envelope mr-2"></i>
-                            <a className="underline" href={`mailto:${email}`}>
-                                {email}
-                            </a>
-                        </p>
                     </div>
                 </div>
-                <div className="border-t border-[#f15a22] mt-8 pt-6 text-center text-[#090f10]">
+
+                {/* الفوتر السفلي */}
+                <div className="border-t border-[#f15a22] mt-10 pt-6 text-center">
                     <p>
-                        جميع الحقوق محفوظة {title} <span>2025 &copy;</span>
+                        جميع الحقوق محفوظة {title} © 2026
                     </p>
                 </div>
             </div>

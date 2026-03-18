@@ -146,7 +146,7 @@ class ProductController extends Controller
         DB::beginTransaction();
 
         // Check if the user is an admin
-        if (auth()->user()->email !== 'Admin@product.com') {
+        if (auth()->user()->email !== 'Admin@alkouwa.com') {
             return response()->json([
                 'success' => false,
                 'message' => 'Unauthorized'
@@ -210,7 +210,7 @@ class ProductController extends Controller
     public function update(Request $request, Product $product)
     {
         // Check if the user is an admin
-        if (auth()->user()->email !== 'Admin@product.com') {
+        if (auth()->user()->email !== 'Admin@alkouwa.com') {
             return response()->json([
                 'success' => false,
                 'message' => 'Unauthorized'
@@ -304,7 +304,7 @@ class ProductController extends Controller
     public function destroy(Product $product)
     {
         // Check if the user is an admin
-        if (auth()->user()->email !== 'Admin@product.com') {
+        if (auth()->user()->email !== 'Admin@alkouwa.com') {
             return response()->json([
                 'success' => false,
                 'message' => 'Unauthorized'
